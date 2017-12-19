@@ -30,13 +30,13 @@ task main()
 
 	while(true)        //Follow the line forever
 	{
-		if (SensorValue(lineTracker4) < 2056) //If the lineTracker reads a value less than 950
+		if (SensorValue(lineTracker4) < 900)
 		{
 
 			motor[port2] = 60;
       motor[port3] = 0;
 		}
-		else if (SensorValue(lineTracker6) < 2056)
+		else if (SensorValue(lineTracker6) < 1200)
 		{
 			//Turn Right
       motor[port2] = 0;
